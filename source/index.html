@@ -10,8 +10,8 @@
 </head>
 
 <body class="page__body">
-  <section class="header-section">
-    <h2 class="header-section__title visually-hidden">Меню навигации</h2>
+  <section class="header-close-burger">
+    <h2 class="header-close-burger__title visually-hidden">Меню навигации</h2>
     <header class="header">
       <div class="header-wrapper">
         <nav class="header-nav">
@@ -24,25 +24,55 @@
             </li>
 
             <li class="header-nav__item burger">
-              <span class="burger-menu">Бургер</span>
-              <ul class="burger-list">
-
-                <li class="burger__item">
-                  <a class="burger__link" href="#">главная</a>
-                </li>
-                <li class="burger__item">
-                  <a class="burger__link" href="/catalog.html">каталог продукции</a>
-                </li>
-                <li class="burger__item">
-                  <a class="burger__link" href="#">подбор программы</a>
-
-                </li>
-              </ul>
+              <div class="nav-item__burger burger-lines">
+                <span class="burger-lines__top"></span>
+                <span class="burger-lines__mid"></span>
+                <span class="burger-lines__bottom"></span>
+              </div>
             </li>
           </ul>
 
         </nav>
       </div>
+    </header>
+  </section>
+
+  <section class="header-open-burger">
+    <h2 class="header-open-burger__title visually-hidden">Меню навигации</h2>
+    <header class="header">
+      <div class="header-wrapper">
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <img class="logo-img" src="/source/icons/logo-mobile.svg" alt="Логотип" width="33" height="38">
+            </li>
+            <li class="header-nav__item">
+              <img class="logo-text" src="/source/icons/text_logo.svg" alt="Логотип" width="101" height="18">
+            </li>
+
+            <li class="header-nav__item burger-close">
+              <div class="burger-close__lines">
+                <span class="burger-close__left"></span>
+                <span class="burger-close__right"></span>
+              </div>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+
+      <ul class="burger-list">
+        <li class="burger__item">
+          <a class="burger__link" href="/index.html">главная</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="/catalog.html">каталог продукции</a>
+        </li>
+        <li class="burger__item">
+          <a class="burger__link" href="/more.html">подбор программы</a>
+
+        </li>
+      </ul>
     </header>
   </section>
 
@@ -152,7 +182,7 @@
           </ul>
         </li>
         <li class="main-footer__copyright copyright">
-          <span class="copyright__author">HTML Academy</span>
+          <a class="copyright__author" href="#">HTML Academy</a>
           <img class="copyright__logo" src="/source/icons/html_academy.svg" alt="Логотип создателя сайта" width="27" height="34">
         </li>
       </ul>
